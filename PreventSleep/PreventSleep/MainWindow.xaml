@@ -1,0 +1,23 @@
+﻿<Window x:Class="PreventSleep.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        ResizeMode="CanMinimize"
+        xmlns:local="clr-namespace:PreventSleep"
+        Icon="Icons/sleep.ico"
+        mc:Ignorable="d"
+        Title="SleepController" Height="100" Width="400" Background="#1b262c" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Content="This App Prevent Your PC from Locking or Sleeping" Foreground="White"/>
+        <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0,20,10" Content="Activate!" x:Name="Btn_Activate" Click="Btn_Activate_OnClick"/>
+    </Grid>
+</Window>
