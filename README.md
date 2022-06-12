@@ -1,2 +1,2 @@
 # PreventSleep
-Prevent PC From Sleeping
+Prevents PC From Sleeping
